@@ -2,41 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Anchor Cove Therapy Design System - Serene Coastal Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Brand Colors - Deep Teal & Sand Beige Base */
+    --background: 32 28% 95%; /* Soft Sand Beige background */
+    --foreground: 0 0% 20%; /* Dark Charcoal text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 32 28% 97%;
+    --card-foreground: 0 0% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 32 28% 97%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Deep Teal */
+    --primary: 180 100% 15%; /* Deep Teal #004d4d */
+    --primary-foreground: 32 28% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Soft Sand Beige */
+    --secondary: 32 28% 90%;
+    --secondary-foreground: 180 100% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones for subtle elements */
+    --muted: 32 28% 92%;
+    --muted-foreground: 180 25% 35%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Soft Seafoam Green for CTAs */
+    --accent: 150 30% 70%; /* Soft Seafoam Green #a8d8c0 */
+    --accent-foreground: 180 100% 15%;
+
+    /* Warm Sunset Coral for highlights */
+    --coral: 15 100% 71%; /* Warm Sunset Coral #ff8c69 */
+    --coral-foreground: 32 28% 95%;
+
+    /* Muted Orange for secondary highlights */
+    --orange: 25 65% 71%; /* Muted Orange #e8a87c */
+    --orange-foreground: 180 100% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 32 28% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 32 28% 85%;
+    --input: 32 28% 95%;
+    --ring: 150 30% 70%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +112,33 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+  }
+
+  /* Custom gradient utilities */
+  .gradient-sunset {
+    background: linear-gradient(135deg, hsl(var(--coral)) 0%, hsl(var(--orange)) 100%);
+  }
+
+  .gradient-ocean {
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+  }
+
+  .gradient-shore {
+    background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
+  }
+
+  /* Text shadow for hero text */
+  .text-shadow-soft {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
