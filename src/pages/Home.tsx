@@ -4,23 +4,17 @@ import { Link } from "react-router-dom";
 import { User, Users, Brain, ArrowRight, Heart } from "lucide-react";
 import heroSunset from "@/assets/hero-sunset.jpg";
 import therapistHeadshot from "@/assets/therapist-headshot.jpg";
-
 const Home = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
-        className="relative h-screen flex items-center justify-center text-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroSunset})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+      <section className="relative h-screen flex items-center justify-center text-center" style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${heroSunset})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
         <div className="max-w-4xl mx-auto px-4 text-white">
-          <h1 className="text-5xl md:text-7xl font-bold font-serif mb-6 text-shadow-soft">
-            Find Your Calm in the Storm
-          </h1>
+          <h1 className="text-5xl md:text-7xl font-bold font-serif mb-6 text-shadow-soft">Healing isn't linear,
+it's tidal</h1>
           <h2 className="text-xl md:text-2xl mb-8 text-shadow-soft font-light">
             Welcome to Anchor Cove. Your safe harbor for healing and growth.
           </h2>
@@ -71,7 +65,7 @@ const Home = () => {
                 <div className="w-16 h-16 bg-coral rounded-full flex items-center justify-center mx-auto mb-6">
                   <Users className="h-8 w-8 text-coral-foreground" />
                 </div>
-                <h3 className="text-xl font-semibold font-serif mb-4 text-primary">Couples Counseling</h3>
+                <h3 className="text-xl font-semibold font-serif mb-4 text-primary">Assessments</h3>
                 <p className="text-muted-foreground mb-6">
                   To strengthen bonds and improve communication. Navigate relationship challenges 
                   with professional guidance.
@@ -123,11 +117,7 @@ const Home = () => {
               </Button>
             </div>
             <div className="flex justify-center">
-              <img
-                src={therapistHeadshot}
-                alt="Dr. Sarah Mitchell, Licensed Therapist"
-                className="w-80 h-80 rounded-full object-cover shadow-xl"
-              />
+              <img src={therapistHeadshot} alt="Dr. Sarah Mitchell, Licensed Therapist" className="w-80 h-80 rounded-full object-cover shadow-xl" />
             </div>
           </div>
         </div>
@@ -161,8 +151,6 @@ const Home = () => {
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
