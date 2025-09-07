@@ -66,10 +66,7 @@ it's tidal</h1>
                   <Users className="h-8 w-8 text-coral-foreground" />
                 </div>
                 <h3 className="text-xl font-semibold font-serif mb-4 text-primary">Assessments</h3>
-                <p className="text-muted-foreground mb-6">
-                  To strengthen bonds and improve communication. Navigate relationship challenges 
-                  with professional guidance.
-                </p>
+                <p className="text-muted-foreground mb-6">To provide a formal diagnosis to guide our work and create clear benchmarks to objectively monitor your progress.</p>
                 <Button variant="outline" asChild>
                   <Link to="/services">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>

@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 import { Anchor, Phone, Mail, MapPin } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -46,11 +44,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-primary-foreground/80">
                 <Phone className="h-4 w-4" />
-                <span className="text-sm">(555) 123-4567</span>
+                <span className="text-sm">(091) 88602-62312</span>
               </div>
               <div className="flex items-center space-x-2 text-primary-foreground/80">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">contact@anchorcovetherapy.com</span>
+                <span className="text-sm">info.anchorcove@gmail.com</span>
               </div>
               <div className="flex items-start space-x-2 text-primary-foreground/80">
                 <MapPin className="h-4 w-4 mt-0.5" />
@@ -61,11 +59,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm text-primary-foreground/60">
-          <p>&copy; 2024 Anchor Cove Therapy. All rights reserved. | Licensed mental health services.</p>
+          <p>© 2025 Anchor Cove Therapy. All rights reserved. | Licensed mental health services.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
