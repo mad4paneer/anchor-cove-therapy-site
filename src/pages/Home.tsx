@@ -78,11 +78,8 @@ it's tidal</h1>
                 <div className="w-16 h-16 bg-orange rounded-full flex items-center justify-center mx-auto mb-6">
                   <Brain className="h-8 w-8 text-orange-foreground" />
                 </div>
-                <h3 className="text-xl font-semibold font-serif mb-4 text-primary">Anxiety & Stress Management</h3>
-                <p className="text-muted-foreground mb-6">
-                  Learn tools to find your inner calm. Develop effective strategies for managing 
-                  anxiety and stress.
-                </p>
+                <h3 className="text-xl font-semibold font-serif mb-4 text-primary">Workshops & Webinars</h3>
+                <p className="text-muted-foreground mb-6">Empower yourself with practical tools and knowledge through interactive workshops and insightful webinars.</p>
                 <Button variant="outline" asChild>
                   <Link to="/services">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
