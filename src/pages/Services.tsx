@@ -21,105 +21,170 @@ const Services = () => {
       {/* Services Details */}
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+          <h2 className="text-4xl font-bold font-serif text-center mb-12 text-primary">
+            Our Services
+          </h2>
+          
+          <Accordion type="single" collapsible className="space-y-6">
             {/* Individual Therapy */}
-            <Card className="border-none shadow-lg hover:shadow-xl transition-smooth">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mb-6">
-                  <User className="h-8 w-8 text-accent-foreground" />
+            <AccordionItem value="individual-therapy" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-left font-semibold text-xl">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                    <User className="h-6 w-6 text-accent-foreground" />
+                  </div>
+                  Individual Therapy
                 </div>
-                <h3 className="text-2xl font-bold font-serif mb-4 text-primary">Individual Therapy</h3>
-                <p className="text-muted-foreground mb-6">
-                  A safe, confidential space to explore your inner world, develop coping strategies, 
-                  and build resilience for life's challenges.
-                </p>
-                <div className="space-y-2 mb-6">
-                  <p className="font-semibold text-primary">Who it's for:</p>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Anxiety and panic disorders</li>
-                    <li>• Depression and mood disorders</li>
-                    <li>• Burnout and stress management</li>
-                    <li>• Grief and loss processing</li>
-                    <li>• Life transitions and changes</li>
-                    <li>• Self-esteem and confidence issues</li>
+              </AccordionTrigger>
+              <AccordionContent className="pt-6 space-y-6">
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">Who it's for:</h4>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>• Adults dealing with anxiety, depression, or mood disorders</li>
+                    <li>• Individuals experiencing burnout or chronic stress</li>
+                    <li>• Those processing grief, trauma, or major life transitions</li>
+                    <li>• People seeking to improve self-esteem and personal growth</li>
+                    <li>• Anyone wanting to develop better coping strategies</li>
                   </ul>
                 </div>
-                <p className="text-sm text-muted-foreground mb-6">
-                  <strong>What to expect:</strong> A collaborative process where we'll explore your 
-                  thoughts, feelings, and patterns together. Using evidence-based techniques, we'll 
-                  develop personalized strategies for healing and growth.
-                </p>
-                <Button variant="outline" className="w-full">
-                  Learn More
-                </Button>
-              </CardContent>
-            </Card>
+                
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">What to expect:</h4>
+                  <p className="text-muted-foreground">
+                    A collaborative, confidential therapeutic relationship where we explore your thoughts, 
+                    feelings, and behavioral patterns. Using evidence-based approaches like CBT, DBT, and 
+                    mindfulness techniques, we'll work together to develop personalized strategies for healing and growth.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">Key Benefits:</h4>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>• Improved emotional regulation and stress management</li>
+                    <li>• Enhanced self-awareness and personal insight</li>
+                    <li>• Development of healthy coping mechanisms</li>
+                    <li>• Better relationships and communication skills</li>
+                    <li>• Increased resilience and life satisfaction</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">Duration & Format:</h4>
+                  <p className="text-muted-foreground">
+                    50-minute sessions, typically weekly or bi-weekly. Treatment duration varies from 
+                    short-term focused work (8-12 sessions) to longer-term therapeutic relationships 
+                    (6+ months). Available both in-person and via secure video sessions.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Couples Counseling */}
-            <Card className="border-none shadow-lg hover:shadow-xl transition-smooth">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-coral rounded-full flex items-center justify-center mb-6">
-                  <Users className="h-8 w-8 text-coral-foreground" />
+            {/* Assessments */}
+            <AccordionItem value="assessments" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-left font-semibold text-xl">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-coral rounded-full flex items-center justify-center">
+                    <Shield className="h-6 w-6 text-coral-foreground" />
+                  </div>
+                  Psychological Assessments
                 </div>
-                <h3 className="text-2xl font-bold font-serif mb-4 text-primary">Couples Counseling</h3>
-                <p className="text-muted-foreground mb-6">
-                  A neutral, supportive environment to improve communication, resolve conflicts, 
-                  and deepen your connection with your partner.
-                </p>
-                <div className="space-y-2 mb-6">
-                  <p className="font-semibold text-primary">Who it's for:</p>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Communication difficulties</li>
-                    <li>• Conflict resolution needs</li>
-                    <li>• Trust and intimacy issues</li>
-                    <li>• Pre-marital counseling</li>
-                    <li>• Major life transitions as a couple</li>
-                    <li>• Relationship strengthening</li>
+              </AccordionTrigger>
+              <AccordionContent className="pt-6 space-y-6">
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">Who it's for:</h4>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>• Individuals seeking clarity on mental health diagnoses</li>
+                    <li>• Students needing accommodations or educational planning</li>
+                    <li>• Adults questioning ADHD, autism, or learning differences</li>
+                    <li>• Those requiring documentation for workplace accommodations</li>
+                    <li>• Anyone wanting comprehensive understanding of their cognitive profile</li>
                   </ul>
                 </div>
-                <p className="text-sm text-muted-foreground mb-6">
-                  <strong>What to expect:</strong> Guided sessions focused on understanding each 
-                  other's perspectives, improving communication skills, and rebuilding or strengthening 
-                  your emotional connection.
-                </p>
-                <Button variant="outline" className="w-full">
-                  Learn More
-                </Button>
-              </CardContent>
-            </Card>
+                
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">What to expect:</h4>
+                  <p className="text-muted-foreground">
+                    A comprehensive evaluation process including clinical interviews, standardized testing, 
+                    and behavioral observations. We'll review your history, current functioning, and specific 
+                    concerns to provide accurate diagnosis and personalized recommendations.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">Key Benefits:</h4>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>• Clear diagnostic clarity and treatment direction</li>
+                    <li>• Detailed written report with actionable recommendations</li>
+                    <li>• Documentation for academic or workplace accommodations</li>
+                    <li>• Better understanding of strengths and challenges</li>
+                    <li>• Informed treatment planning and goal setting</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">Duration & Format:</h4>
+                  <p className="text-muted-foreground">
+                    2-4 sessions over 2-3 weeks, including initial interview (90 minutes), 
+                    testing session(s) (2-4 hours), and feedback session (60 minutes). 
+                    Comprehensive written report provided within 2 weeks of completion.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Specialty Services */}
-            <Card className="border-none shadow-lg hover:shadow-xl transition-smooth">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-orange rounded-full flex items-center justify-center mb-6">
-                  <Brain className="h-8 w-8 text-orange-foreground" />
+            {/* Workshops */}
+            <AccordionItem value="workshops" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-left font-semibold text-xl">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-orange rounded-full flex items-center justify-center">
+                    <Users className="h-6 w-6 text-orange-foreground" />
+                  </div>
+                  Therapeutic Workshops
                 </div>
-                <h3 className="text-2xl font-bold font-serif mb-4 text-primary">Trauma & PTSD Support</h3>
-                <p className="text-muted-foreground mb-6">
-                  Specialized, trauma-informed care for those who have experienced traumatic events 
-                  and are seeking professional support for healing.
-                </p>
-                <div className="space-y-2 mb-6">
-                  <p className="font-semibold text-primary">Who it's for:</p>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Post-traumatic stress (PTSD)</li>
-                    <li>• Childhood trauma processing</li>
-                    <li>• Acute stress reactions</li>
-                    <li>• Complex trauma recovery</li>
-                    <li>• Anxiety related to past events</li>
-                    <li>• Survivors seeking healing</li>
+              </AccordionTrigger>
+              <AccordionContent className="pt-6 space-y-6">
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">Who it's for:</h4>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>• Groups wanting to learn specific mental health skills</li>
+                    <li>• Organizations seeking employee wellness programs</li>
+                    <li>• Individuals preferring group learning environments</li>
+                    <li>• Those looking for cost-effective mental health education</li>
+                    <li>• Community groups focused on collective healing</li>
                   </ul>
                 </div>
-                <p className="text-sm text-muted-foreground mb-6">
-                  <strong>What to expect:</strong> Evidence-based trauma therapies including EMDR 
-                  and somatic approaches, delivered in a safe, controlled environment at your own pace.
-                </p>
-                <Button variant="outline" className="w-full">
-                  Learn More
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
+                
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">What to expect:</h4>
+                  <p className="text-muted-foreground">
+                    Interactive, skills-based workshops covering topics like stress management, 
+                    mindfulness, communication, and emotional regulation. Includes psychoeducation, 
+                    practical exercises, and take-home resources for continued practice.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">Key Benefits:</h4>
+                  <ul className="text-muted-foreground space-y-2">
+                    <li>• Practical, evidence-based coping strategies</li>
+                    <li>• Peer support and shared learning experiences</li>
+                    <li>• Cost-effective access to mental health education</li>
+                    <li>• Immediate application of skills and techniques</li>
+                    <li>• Community building and reduced isolation</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 className="font-semibold text-primary mb-3">Duration & Format:</h4>
+                  <p className="text-muted-foreground">
+                    Single workshops (2-3 hours) or multi-session series (4-8 weeks, 90 minutes each). 
+                    Available for groups of 6-12 participants. Topics include: Anxiety Management, 
+                    Mindfulness & Stress Reduction, Healthy Boundaries, and Emotional Intelligence.
+                  </p>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
 
           {/* Detailed Service Information */}
           <div className="max-w-4xl mx-auto">
