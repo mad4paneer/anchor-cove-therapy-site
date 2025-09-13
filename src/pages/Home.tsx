@@ -66,7 +66,7 @@ it's tidal</h1>
                   <Users className="h-8 w-8 text-coral-foreground" />
                 </div>
                 <h3 className="text-xl font-semibold font-serif mb-4 text-primary">Assessments</h3>
-                <p className="text-muted-foreground mb-6">To provide a formal diagnosis to guide our work and create clear benchmarks to objectively monitor your progress.</p>
+                <p className="text-muted-foreground mb-6">Provide formal diagnosis to guide our work and create clear benchmarks to objectively monitor your progress.</p>
                 <Button variant="outline" asChild>
                   <Link to="/services">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
@@ -123,11 +123,9 @@ it's tidal</h1>
           <Card className="border-none shadow-lg">
             <CardContent className="p-12">
               <Heart className="h-12 w-12 text-coral mx-auto mb-8" />
-              <blockquote className="text-2xl font-serif text-primary mb-6 italic">
-                "Working with Anchor Cove felt like finally finding solid ground. I felt heard, 
-                understood, and truly supported throughout my healing journey."
-              </blockquote>
-              <cite className="text-muted-foreground">— J.S., Former Client</cite>
+              <blockquote className="text-2xl font-serif text-primary mb-6 italic">"
+"Starting therapy with Aashima has truly been life-changing. I came to her at a time when I was at my lowest, unable to care for myself or find any sense of direction. Her no-nonsense yet deeply compassionate approach made me feel seen and supported from day one. She never dismissed my experiences, and her guidance helped me shift the way I view myself and my life. With her tools and insights, I've been able to rebuild a healthier life, routine and mindset. If you're considering working with her, know that you're in the best hands—she's empathetic, direct, and her sessions leave you with practical tools that stay with you for life."</blockquote>
+              <cite className="text-muted-foreground">— S.W. </cite>
             </CardContent>
           </Card>
         </div>
